@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-select",
+	"version": "1.0.0",
+	"title": "Select Field",
+	"category": "form-blocks",
+	"icon": "arrow-down-alt2",
+	"description": "A dropdown select field.",
+	"keywords": [ "select", "dropdown", "field", "form", "options" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"defaultValue": { "type": "string",  "default": "" },
+		"options": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"label": { "type": "string" },
+					"value": { "type": "string" }
+				}
+			},
+			"default": []
+		}
+	},
+	"supports": { "html": false }
+}

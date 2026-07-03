@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-time",
+	"version": "1.0.0",
+	"title": "Time Field",
+	"category": "form-blocks",
+	"icon": "clock",
+	"description": "A time input field.",
+	"keywords": [ "time", "input", "field", "form" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"defaultValue": { "type": "string",  "default": "" }
+	},
+	"supports": { "html": false }
+}

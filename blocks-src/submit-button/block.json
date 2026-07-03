@@ -1,0 +1,37 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/submit-button",
+	"version": "1.0.0",
+	"title": "Submit Button",
+	"category": "form-blocks",
+	"icon": "button",
+	"description": "Submit button for a Form Blocks form.",
+	"keywords": [ "submit", "button", "form" ],
+	"textdomain": "form-blocks",
+	"parent": [ "form-blocks/form" ],
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"text": {
+			"type": "string",
+			"source": "html",
+			"selector": "button",
+			"default": "Submit"
+		}
+	},
+	"supports": {
+		"html": false,
+		"typography": {
+			"fontSize": true
+		},
+		"spacing": {
+			"padding": true,
+			"margin": true
+		},
+		"border": {
+			"radius": true,
+			"width": true,
+			"style": true
+		}
+	}
+}

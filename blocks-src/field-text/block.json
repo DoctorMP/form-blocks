@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-text",
+	"version": "1.0.0",
+	"title": "Text Field",
+	"category": "form-blocks",
+	"icon": "edit",
+	"description": "A single-line text input.",
+	"keywords": [ "input", "text", "field", "form" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"placeholder":  { "type": "string",  "default": "" },
+		"defaultValue": { "type": "string",  "default": "" },
+		"pattern":      { "type": "string",  "default": "" }
+	},
+	"supports": { "html": false }
+}

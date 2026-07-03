@@ -1,0 +1,64 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/form",
+	"version": "1.0.0",
+	"title": "Form",
+	"category": "form-blocks",
+	"description": "A form container block. Configure delivery in the inspector panel.",
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"editorStyle":  "file:./index.css",
+	"style":        "file:./style-index.css",
+	"viewScript":   "file:./view.js",
+	"render":       "file:./render.php",
+	"attributes": {
+		"target": {
+			"type": "string",
+			"enum": [ "mail", "api" ],
+			"default": "mail"
+		},
+		"recipient": {
+			"type": "string",
+			"default": ""
+		},
+		"method": {
+			"type": "string",
+			"enum": [ "get", "post", "put", "patch", "delete" ],
+			"default": "post"
+		},
+		"message": {
+			"type": "string",
+			"default": ""
+		},
+		"headers": {
+			"type": "string",
+			"default": ""
+		},
+		"async": {
+			"type": "boolean",
+			"default": false
+		},
+		"msgSuccess":         { "type": "string", "default": "" },
+		"msgSendError":       { "type": "string", "default": "" },
+		"msgValidationError": { "type": "string", "default": "" },
+		"msgNetworkError":    { "type": "string", "default": "" },
+		"msgRequired":        { "type": "string", "default": "" },
+		"msgInvalidEmail":    { "type": "string", "default": "" },
+		"msgInvalidNumber":   { "type": "string", "default": "" },
+		"msgInvalidTime":     { "type": "string", "default": "" },
+		"msgInvalidDate":     { "type": "string", "default": "" },
+		"msgPatternMismatch": { "type": "string", "default": "" },
+		"msgInvalidSelect":   { "type": "string", "default": "" }
+	},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": [ "wide", "full" ],
+		"listView": true,
+		"spacing": {
+			"padding": true,
+			"margin": true
+		}
+	}
+}

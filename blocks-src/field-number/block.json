@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-number",
+	"version": "1.0.0",
+	"title": "Number Field",
+	"category": "form-blocks",
+	"icon": "sort",
+	"description": "A numeric input field.",
+	"keywords": [ "number", "input", "field", "form" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"placeholder":  { "type": "string",  "default": "" },
+		"defaultValue": { "type": "string",  "default": "" }
+	},
+	"supports": { "html": false }
+}

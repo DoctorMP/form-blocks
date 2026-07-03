@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-textarea",
+	"version": "1.0.0",
+	"title": "Textarea Field",
+	"category": "form-blocks",
+	"icon": "editor-paragraph",
+	"description": "A multi-line text area.",
+	"keywords": [ "textarea", "text", "field", "form", "multiline" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"placeholder":  { "type": "string",  "default": "" },
+		"defaultValue": { "type": "string",  "default": "" },
+		"rows":         { "type": "integer", "default": 4 },
+		"cols":         { "type": "integer", "default": 0 }
+	},
+	"supports": { "html": false }
+}

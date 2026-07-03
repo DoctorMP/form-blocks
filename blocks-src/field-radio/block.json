@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-radio",
+	"version": "1.0.0",
+	"title": "Radio Button",
+	"category": "form-blocks",
+	"icon": "marker",
+	"description": "A single radio button. Add multiple with the same Name to form a group.",
+	"keywords": [ "radio", "option", "field", "form" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":    { "type": "string",  "default": "" },
+		"name":     { "type": "string",  "default": "" },
+		"id":       { "type": "string",  "default": "" },
+		"required": { "type": "boolean", "default": false },
+		"value":    { "type": "string",  "default": "" },
+		"checked":  { "type": "boolean", "default": false }
+	},
+	"supports": { "html": false }
+}

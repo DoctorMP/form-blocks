@@ -1,0 +1,64 @@
+/**
+ * Form block — editor-only styles.
+ */
+
+.wp-block-form-blocks-form {
+	position: relative;
+	border: 1px dashed var( --wp-admin-theme-color, #3858e9 );
+	padding: 2rem 1rem 1rem;
+	min-height: 3rem;
+}
+
+// ── Select options repeater ───────────────────────────────────────────────────
+
+.form-blocks-options-editor {
+	margin-top: 0.5rem;
+
+	&__heading {
+		margin: 0 0 0.5rem;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr auto;
+		gap: 4px;
+		align-items: flex-end;
+		margin-bottom: 4px;
+
+		.components-base-control {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// ── Submit button preview ─────────────────────────────────────────────────────
+
+.form-blocks-submit {
+	display: inline-block;
+	padding: 0.6em 1.4em;
+	background-color: var( --wp-admin-theme-color, #3858e9 );
+	color: #fff;
+	border-radius: 2px;
+	font-weight: 600;
+	line-height: 1.4;
+	min-width: 4em;
+	cursor: text;
+}
+
+.form-blocks-form__badge {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	padding: 0.15rem 0.5rem;
+	font-size: 0.7rem;
+	font-family: monospace;
+	line-height: 1.4;
+	color: #fff;
+	background: var( --wp-admin-theme-color, #3858e9 );
+	pointer-events: none;
+	user-select: none;
+}

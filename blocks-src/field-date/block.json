@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-date",
+	"version": "1.0.0",
+	"title": "Date Field",
+	"category": "form-blocks",
+	"icon": "calendar-alt",
+	"description": "A date picker input field.",
+	"keywords": [ "date", "input", "field", "form" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":        { "type": "string",  "default": "" },
+		"name":         { "type": "string",  "default": "" },
+		"id":           { "type": "string",  "default": "" },
+		"required":     { "type": "boolean", "default": false },
+		"defaultValue": { "type": "string",  "default": "" }
+	},
+	"supports": { "html": false }
+}

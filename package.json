@@ -1,0 +1,17 @@
+{
+	"name": "form-blocks",
+	"version": "1.0.0",
+	"description": "Block-based form builder for WordPress",
+	"private": true,
+	"scripts": {
+		"blocks:build": "WP_SOURCE_PATH=blocks-src node node_modules/webpack/bin/webpack.js --config webpack.blocks.config.js --mode=production",
+		"blocks:start": "WP_SOURCE_PATH=blocks-src node node_modules/webpack/bin/webpack.js --config webpack.blocks.config.js --mode=development --watch",
+		"blocks:lint":  "node node_modules/@wordpress/scripts/bin/wp-scripts.js lint-js blocks-src"
+	},
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"@wordpress/scripts": "^32.4.0",
+		"webpack": "^5.105.4",
+		"webpack-cli": "^7.0.2"
+	}
+}

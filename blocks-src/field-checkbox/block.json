@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "form-blocks/field-checkbox",
+	"version": "1.0.0",
+	"title": "Checkbox Field",
+	"category": "form-blocks",
+	"icon": "yes-alt",
+	"description": "A single checkbox input.",
+	"keywords": [ "checkbox", "check", "field", "form", "toggle" ],
+	"textdomain": "form-blocks",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"label":    { "type": "string",  "default": "" },
+		"name":     { "type": "string",  "default": "" },
+		"id":       { "type": "string",  "default": "" },
+		"required": { "type": "boolean", "default": false },
+		"checked":  { "type": "boolean", "default": false }
+	},
+	"supports": { "html": false }
+}
